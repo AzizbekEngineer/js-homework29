@@ -1,0 +1,62 @@
+.hero {
+    padding: 60px 0 40px;
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        align-items: center;
+    }
+
+    &__name {
+        font-size: 18px;
+        padding: 15px 0;
+        color: #3D3D3D;
+    }
+
+    &__title {
+        font-size: 70px;
+        color: #3D3D3D;
+        line-height: 70px;
+
+        span {
+            color: #46A358;
+        }
+    }
+
+    &__desc {
+        font-size: 18px;
+        padding: 15px 0;
+        line-height: 25px;
+        opacity: 0.8;
+    }
+
+    &__img {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+@media (max-width:1100px) {
+    .hero {
+        &__title {
+            font-size: 50px;
+            line-height: 50px;
+        }
+    }
+}
+
+@media (max-width:780px) {
+    .hero {
+        &__cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+    }
+}

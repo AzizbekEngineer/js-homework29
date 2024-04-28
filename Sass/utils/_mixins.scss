@@ -1,0 +1,43 @@
+@mixin btn($bg: var($secondaryCl), $cl: var($primaryCl), $size: 16px) {
+    background: $bg ;
+    color: $cl;
+    font-size: $size;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: 0.4s;
+
+    &:hover {
+        color: white;
+        background: black;
+    }
+}
+
+@mixin btnRed($bg: #F72585, $cl:white, $size: 16px) {
+    background: $bg ;
+    color: $cl;
+    font-size: $size;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #F72585;
+    transition: 0.4s;
+
+    &:hover {
+        color: #F72585;
+        background: white;
+    }
+}
+@mixin btnBlue($bg: #4586D6, $cl: white, $size: 16px) {
+    background: $bg ;
+    color: $cl;
+    font-size: $size;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #4586D6;
+    transition: 0.4s;
+
+    &:hover {
+        color: #4586D6;
+        background: white;
+    }
+}

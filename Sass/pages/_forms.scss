@@ -1,0 +1,21 @@
+.forms {
+    padding: 80px 0;
+}
+
+.form h3 {
+    text-align: start;
+}
+
+.form__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.input__card input {
+    margin-top: 8px;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+}
